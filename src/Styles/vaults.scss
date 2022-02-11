@@ -1,0 +1,142 @@
+.vaultPools {
+  padding: 100px 0 30px 0;
+  .tisdfsdfsdtle {
+    @include displayCenter(center, center);
+    margin-bottom: 40px;
+    h4 {
+      color: $white__color;
+      font-size: 30px;
+    }
+  }
+}
+.lpVaults {
+  padding: 0;
+  margin-bottom: 50px;
+  .main_wrapper {
+    background-color: #2428319d;
+    border-radius: 5px;
+    // @include neonEffectModal(5px, $neon_background_eight);
+    &_header {
+      padding: 15px;
+      border-radius: 10px 10px 0 0;
+      cursor: pointer;
+      @include displayCenter(center, space-between);
+      flex-wrap: wrap;
+      color: $primary;
+      .header_wrapper {
+        &_left {
+          margin-right: 10px;
+          img {
+            width: 30px;
+            height: 30px;
+            // @include image(contain);
+          }
+        }
+        &_right {
+        }
+        h4,
+        p {
+          margin: 0;
+        }
+        h4{
+          font-size: 20px;
+        }
+        svg {
+          width: 40px;
+          height: 40px;
+          padding: 5px;
+          border-radius: 10px;
+          background-color: transparent;
+          border: 1px solid;
+          cursor: pointer;
+        }
+      }
+      .wefwe {
+        @include displayCenter(center, space-between);
+      }
+    }
+  }
+
+  .lpWrapper {
+    background-color: transparent;
+    // @include neonEffectModal(0, $neon_background_seven);
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+    margin-top: 20px;
+    .liquidity__pool__box {
+      background-color: transparent;
+      color: $primary;
+      border-color: #b4a66e !important;
+      input {
+        background-color: transparent !important;
+        color: $primary !important;
+      }
+      h5 {
+        font-size: 16px;
+      }
+    }
+    .info {
+      margin-top: 10px;
+      .info_part {
+        @include displayCenter(center, space-between);
+        p,
+        a {
+          font-size: 11px;
+          margin: 3px;
+        }
+        a {
+          color: $primary;
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+
+  @include mQ($md) {
+    .main_wrapper {
+      &_header {
+        padding: 15px 5px;
+        @include displayCenter(flex-start, space-between);
+        .header_wrapper {
+          &_left {
+            margin-right: 10px;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          h4 {
+            font-size: 12px;
+          }
+          p {
+            font-size: 10px;
+          }
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .lpWrapper {
+      padding: 5px;
+    }
+  }
+}
+
+.vault__input {
+  .css-26l3qy-menu {
+    background-color: $secondary !important;
+    color: $primary !important;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .css-2b097c-container {
+    min-width: 115px !important;
+  }
+}
+.load {
+  margin-top: -4px;
+}

@@ -1,0 +1,92 @@
+footer {
+  .footer__top {
+    // background-image: linear-gradient(239deg, #74ebd5 0%, #9face6 100%);
+    // background-color: $primary;
+    margin-bottom: 20px;
+    &__left {
+      padding: 50px 0 50px 50px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+      .loan {
+        text-transform: uppercase;
+      }
+      h4 {
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+    &__right {
+      position: relative;
+      height: 100%;
+      .btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-weight: 500;
+        background-color: $brand__color;
+        float: right;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $white__color;
+        font-size: 16px;
+        border-radius: 0 !important;
+        padding: 10px 35px;
+        transition: all 0.5s ease-in-out;
+        border: 0 !important;
+        &:focus,
+        &:active {
+          outline: none !important;
+          box-shadow: none;
+        }
+        &:hover {
+          box-shadow: $box_shadow_one;
+        }
+        span {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .footer__bottom {
+    position: fixed;
+    width: calc(100%);
+    bottom: 0px;
+    color: $white__color !important;
+    padding: 25px 15px;
+    background: linear-gradient(90deg, #000850 0%, #000320 100%),
+      radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
+      linear-gradient(225deg, #ff7a00 0%, #000000 100%),
+      linear-gradient(
+        135deg,
+        #cdffeb 10%,
+        #cdffeb 35%,
+        #009f9d 35%,
+        #009f9d 60%,
+        #07456f 60%,
+        #07456f 67%,
+        #0f0a3c 67%,
+        #0f0a3c 100%
+      );
+    
+    &__left {
+      p,
+      a {
+        margin: 0 !important;
+        font-size: 14px;
+        font-weight: 400 !important;
+        color: $white__color;
+        text-decoration: none;
+      }
+    }
+    &__right {
+      float: right;
+      img {
+        margin: 0 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

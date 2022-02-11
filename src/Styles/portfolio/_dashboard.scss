@@ -1,0 +1,400 @@
+.dashboard {
+  padding: 100px 0 30px 0;
+  color: $white__color;
+  .dashboard_header {
+    margin-bottom: 30px;
+    .dd_card {
+      border: 1px solid $white__color;
+      border-radius: 5px;
+      padding: 10px;
+      @include displayCenter(center, center);
+      flex-direction: column;
+      text-align: center;
+      height: 100%;
+      h3 {
+        text-transform: uppercase;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .first {
+      div {
+        margin-bottom: 10px;
+      }
+    }
+    .second {
+      text-align: left;
+      div {
+        width: 100%;
+        @include displayCenter(center, space-between);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $white__color;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+    .third {
+      div {
+        width: 100%;
+        @include displayCenter(center, space-evenly);
+        .logo {
+          @include displayCenter(center, flex-start);
+          img {
+            margin-right: 8px;
+          }
+        }
+        .price {
+          display: flex;
+          flex-direction: column;
+          @include displayCenter(flex-end, flex-end);
+        }
+      }
+    }
+    .credentials {
+      @include displayCenter(flex-start, center);
+      .row {
+        width: 100%;
+        @include displayCenter(center, center);
+      }
+      .first_div {
+        flex: 0 0 20%;
+        .vault {
+          // margin-left: 16px;
+          margin-right: 16px;
+          .heading {
+            padding-bottom: 16px;
+          }
+          .capl {
+            padding-bottom: 12px;
+          }
+        }
+      }
+      .second_div {
+        flex: 0 0 77%;
+      }
+      border: 1px solid $white__color;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 30px 0;
+      h4 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    &_left {
+      border: 1px solid $white__color;
+      border-radius: 5px;
+      padding: 10px;
+      height: 100%;
+    }
+    &_right {
+      border: 1px solid $white__color;
+      border-radius: 5px;
+      padding: 10px;
+      height: 100%;
+    }
+    .main_card {
+      text-align: center;
+      @include displayCenter(center, space-between);
+      flex-direction: column;
+      height: 100% !important;
+      border: 1px solid $white__color;
+      border-radius: 5px;
+      padding: 10px;
+      p {
+        @include normalFont(13px);
+        font-size: 14px;
+        margin: 0;
+      }
+      h3 {
+        margin: 0 !important;
+        font-size: 1.3rem;
+      }
+      h6 {
+        margin: 0;
+        font-size: 12px;
+      }
+    }
+    .last_Card {
+      @include displayCenter(center, center);
+      border: 0;
+    }
+  }
+  .green {
+    color: green;
+  }
+  .title_info {
+    @include displayCenter(center, center);
+    flex-direction: column;
+    h4 {
+      color: $white__color;
+      font-size: xx-large;
+    }
+    p {
+      @include normalFont(14px);
+    }
+
+    .btn_brand {
+      margin-top: 10px;
+      border-radius: 33px;
+      padding: 12px 35px;
+    }
+  }
+  .platform {
+    margin: 40px 0;
+  }
+  .dashboard_wrapper {
+    padding-top: 50px;
+    .dashboard_card {
+      border: 1px solid $white__color;
+      border-radius: 5px;
+      padding: 20px;
+      height: 100%;
+      @include mQ($sm) {
+        padding: 10px;
+      }
+    }
+    .dashboard_card_one {
+      .btn_brand {
+        // border-radius: 33px;
+        padding: 5px 20px;
+        font-size: 14px;
+        margin-left: auto;
+      }
+      .db_top {
+        @include displayCenter(center, flex-stretch);
+        &_left {
+          width: 100%;
+          text-align: left;
+        }
+        &_right {
+          width: 100%;
+          text-align: left;
+          h5 {
+            font-size: 20px;
+          }
+          h6 {
+            @include normalFont(12px);
+            margin-bottom: 5px;
+          }
+        }
+        @include mQ($sm) {
+          // flex-wrap: wrap;
+        }
+      }
+      .db_bottom {
+        // margin-top: 20px;
+        @include displayCenter(center, space-between);
+        border: 1px solid $white__color;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 10px;
+        &_left {
+          @include displayCenter(flex-start, center);
+          width: 100%;
+          flex-direction: column;
+          img {
+            margin-bottom: 10px;
+          }
+          p {
+            color: green;
+          }
+        }
+        &_right {
+          width: 100%;
+          .list {
+            border-bottom: 1px solid $white__color;
+            margin-bottom: 15px;
+            p {
+              @include normalFont(14px);
+              margin-bottom: 5px;
+            }
+            @include displayCenter(center, space-between);
+          }
+        }
+        @include mQ($sm) {
+          flex-wrap: wrap;
+          &_right {
+            flex-wrap: wrap;
+          }
+        }
+      }
+      .tokenomics {
+        font-size: large;
+        margin-top: 35px;
+        margin-bottom: 0;
+      }
+    }
+    .dashboard_card_two {
+      .tresury {
+        margin-top: 20px;
+        font-size: large;
+        margin-bottom: 5px;
+      }
+      .db_bottom {
+        margin-top: 0;
+      }
+      .totalLiquidty {
+        @include displayCenter(center, space-between);
+        border: 1px solid $white__color;
+        border-radius: 5px;
+        padding: 10px;
+        p {
+          margin: 0;
+        }
+      }
+      // .db_top {
+      //   @include displayCenter(center, center);
+      //   flex-direction: column;
+      //   .btn_brand {
+      //     border-radius: 33px;
+      //     padding: 9px 20px;
+      //     font-size: 14px;
+      //   }
+      // }
+      // .db_bottom {
+      //   p {
+      //     margin-bottom: 5px;
+      //     @include normalFont(14px);
+      //   }
+      //   .green {
+      //     color: green;
+      //   }
+      //   margin-top: 20px;
+      //   .Massin {
+      //     text-align: center;
+      //   }
+      //   .Db_lol {
+      //     margin-top: 20px;
+      //     @include displayCenter(center, stretch);
+      //     .db_bottom_left {
+      //       text-align: left;
+      //       width: 100%;
+      //       border-right: 1px solid $primary;
+      //     }
+      //     .db_bottom_right {
+      //       text-align: right;
+      //       width: 100%;
+      //     }
+      //   }
+      // }
+    }
+    .dashboard_card_three {
+      .btn_brand {
+        // border-radius: 33px;
+        padding: 5px 20px;
+        font-size: 14px;
+      }
+      .db_top {
+        @include displayCenter(center, center);
+        flex-direction: row !important;
+        justify-content: space-between;
+        .id {
+          @include userAddress(300px);
+          padding: 10px 5px;
+          border: 1px solid $white__color;
+          border-radius: 5px;
+        }
+        @include mQ($sm) {
+          flex-wrap: wrap;
+          text-align: center;
+          justify-content: center;
+          .id {
+            @include userAddress(200px);
+          }
+        }
+      }
+      .db_bottom {
+        margin-top: 0 !important;
+        .Db_lol {
+          flex-direction: column !important;
+          justify-content: space-between !important;
+          .heads {
+            font-size: large;
+            width: 100%;
+          }
+          .db_bottom_left {
+            text-align: center !important;
+            // border-right: 0 !important;
+            border: 1px solid $white__color;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            div {
+              @include displayCenter(center, space-between);
+              margin-bottom: 0px !important;
+              p {
+                margin-bottom: 5px !important;
+                &:first-child {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          .db_bottom_right {
+            text-align: center !important;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid $white__color;
+            div {
+              @include displayCenter(center, space-between);
+              margin-bottom: 0 !important;
+              p {
+                margin-bottom: 5px !important;
+                &:first-child {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+      @include mQ($sm) {
+        .db_bottom {
+          text-align: center;
+          .Db_lol {
+            flex-wrap: wrap;
+            justify-content: space-between !important;
+            .db_bottom_left {
+              text-align: center !important;
+              margin-bottom: 15px;
+            }
+            .db_bottom_right {
+              text-align: center !important;
+              .btns {
+                margin-top: 10px;
+                justify-content: center !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .dashboard_card_four {
+      .db_bottom_top {
+        @include displayCenter(center, space-between);
+      }
+      .db_bottom {
+        border: 1px solid $white__color;
+        border-radius: 5px;
+        padding: 10px;
+        .item {
+          @include displayCenter(center, space-between);
+          border-bottom: 1px solid $white__color;
+          margin-bottom: 10px;
+          &:last-child {
+            border-bottom: 0;
+          }
+          @include mQ($sm) {
+            flex-wrap: wrap !important;
+          }
+        }
+      }
+    }
+  }
+}

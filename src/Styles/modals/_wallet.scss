@@ -1,0 +1,161 @@
+.wallets {
+  .modal-dialog {
+    max-width: 430px;
+  }
+  .buy__cpt__header__tile {
+    margin-bottom: 50px;
+    h4 {
+      font-size: 20px;
+      color: $primary !important;
+    }
+  }
+  .buy__cpt__header__close {
+    top: 17px;
+  }
+
+  .wallet {
+    border-radius: 5px;
+    box-shadow: $box-shadow-two;
+    padding: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    box-shadow: $box-shadow-four;
+    transition: $transition;
+    @include displayCenter(center, space-between);
+    img {
+      max-width: 30px;
+      max-height: 30px;
+      margin-right: 15px;
+    }
+    h5 {
+      margin: 0;
+      font-size: 16px;
+      color: $primary !important;
+    }
+    &:hover {
+      box-shadow: 0px 0px 4px 2px rgb(148, 235, 238);
+    }
+  }
+}
+
+.Disconnecct {
+  .modal-dialog {
+    max-width: 480px;
+  }
+  .wallet_icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: auto auto 20px auto;
+    box-shadow: $box-shadow-four;
+    img {
+      @include image(contain);
+    }
+    @include mQ($sm) {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      margin: auto auto 10px auto;
+    }
+  }
+
+  .user__id {
+    background-color: #111111 !important;
+    border-radius: 5px;
+
+    p {
+      //   @include userAddress(390px);
+      text-align: center;
+    }
+    @include mQ(450px) {
+      p {
+        @include userAddress(300px);
+        text-align: center;
+      }
+    }
+    @include mQ(350px) {
+      p {
+        @include userAddress(200px);
+        text-align: center;
+      }
+    }
+  }
+
+  @include mQ($sm) {
+    button {
+      font-size: 12px;
+    }
+  }
+}
+
+.settings {
+  .minutes_wrapper {
+    color: $primary;
+    h5 {
+      margin: 0;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    label {
+      float: left;
+    }
+    input {
+      background-color: transparent;
+      border-radius: 33px;
+      color: $primary;
+      border: 1px solid $primary;
+      padding: 10px 15px;
+    }
+    padding: 20px;
+  }
+  .success__body {
+    padding: 0px 0 50px 0;
+  }
+}
+
+.success__body {
+  color: $primary !important;
+  margin-top: 50px;
+  .transform {
+    padding: 0;
+    padding-bottom: 20px;
+    border: 1px solid rgb(11, 247, 215) !important;
+    .box_wrapper {
+      background-color: #000000 !important;
+      &_container {
+        background-color: #000000 !important;
+      }
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+    .container {
+      padding: 0;
+      .box_wrapper {
+        padding: 5px;
+      }
+    }
+    select{
+      color: $primary;
+    }
+  }
+  .convertLp {
+    .box_wrapper_container_bottom_right {
+      h4 {
+        // margin: 0;
+        @include displayCenter(center, center);
+        span {
+          margin-right: 5px;
+          img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}

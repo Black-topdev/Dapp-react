@@ -1,0 +1,3 @@
+export const CONNECT_WALLET = 'CONNECT_WALLET'
+export const CHECK_ADMIN = 'CHECK_ADMIN'
+
