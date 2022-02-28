@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Container, Image } from 'react-bootstrap'
 import { RiListSettingsLine } from 'react-icons/ri'
 import { VscHistory } from 'react-icons/vsc'
-import { BiChevronDown } from 'react-icons/bi'
 import { BsArrowDown } from 'react-icons/bs'
 import ReactLoading from 'react-loading'
 
@@ -54,7 +53,7 @@ const SwapPool = () => {
 
   useEffect(() => {
     if (time === '') {
-      setTime(0)
+      setTime(11110)
     }
   }, [time])
 
@@ -329,7 +328,7 @@ const SwapPool = () => {
                 className={
                   errors ? 'btn_brand btn_brand_disabled' : 'btn_brand'
                 }
-                disabled={errors}
+                // disabled={errors}
                 onClick={makeSwap}
               >
                 Swap

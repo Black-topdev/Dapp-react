@@ -89,25 +89,6 @@ const AdminLp = () => {
     dispatch(addLiquidityTokens(secondPrice, price, time))
   }
 
-  // useEffect(() => {
-  //   if (setFirstInp) {
-  //     if (price === '') {
-  //       setSecondPrice('')
-  //     } else {
-  //       setSecondPrice(ccptPrice)
-  //     }
-  //   }
-  // }, [price, ccptPrice, setFirstInp])
-
-  // useEffect(() => {
-  //   if (setSecondInp) {
-  //     if (secondPrice === '') {
-  //       setSecondPrice('')
-  //     } else {
-  //       setSecondPrice(usdcPrice)
-  //     }
-  //   }
-  // }, [secondPrice, usdcPrice, setSecondInp])
 
   useEffect(() => {
     if (
@@ -139,18 +120,6 @@ const AdminLp = () => {
     <>
       <div className='swap'>
         <Container>
-          {/* <div className='toggle_buttons'>
-            <Link to='/swap'>
-              <div className='toggle_wrapper'>
-                <h6>Swap</h6>
-              </div>
-            </Link>
-            <Link to='/liquidity'>
-              <div className='toggle_wrapper active'>
-                <h6>Liquidity</h6>
-              </div>
-            </Link>
-          </div> */}
           <div className='box_wrapper'>
             <div className='box_wrapper_header'>
               <div className='box_wrapper_header_left'>
@@ -159,7 +128,6 @@ const AdminLp = () => {
               </div>
               <div className='box_wrapper_header_right'>
                 <RiListSettingsLine onClick={() => setOpenSet(true)} />
-                {/* <VscHistory onClick={() => setOpenTrans(true)} /> */}
               </div>
             </div>
             <div className='box_wrapper_container'>
@@ -192,22 +160,6 @@ const AdminLp = () => {
                     value={price}
                     onChange={handlePriceChange}
                   />
-                  {/* <NumberFormat
-                    disabled={false}
-                    thousandsGroupStyle='thousand'
-                    value={price}
-                    decimalSeparator='.'
-                    displayType='input'
-                    type='text'
-                    thousandSeparator={true}
-                    allowNegative={false}
-                    fixedDecimalScale={true}
-                    allowLeadingZeros={false}
-                    decimalScale={4}
-                    onValueChange={handlePriceChange}
-                    placeholder='0.0000'
-                    className='shadow-none form-control'
-                  /> */}
                 </div>
                 <div className='box_wrapper_container_bottom_right'>
                   {/* <h4>MAX</h4> */}
@@ -250,22 +202,6 @@ const AdminLp = () => {
                     value={secondPrice}
                     onChange={handlePriceChangeTwo}
                   />
-                  {/* <NumberFormat
-                    disabled={false}
-                    thousandsGroupStyle='thousand'
-                    value={price}
-                    decimalSeparator='.'
-                    displayType='input'
-                    type='text'
-                    thousandSeparator={true}
-                    allowNegative={false}
-                    fixedDecimalScale={true}
-                    allowLeadingZeros={false}
-                    decimalScale={4}
-                    onValueChange={handlePriceChange}
-                    placeholder='0.0000'
-                    className='shadow-none form-control'
-                  /> */}
                 </div>
                 <div className='box_wrapper_container_bottom_right'>
                   {/* <Image src={USDC} alt='' /> */}

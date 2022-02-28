@@ -135,25 +135,8 @@ const Header = () => {
                     <Nav.Link>Admin</Nav.Link>
                   </LinkContainer>
                 )}
-                {/* <LinkContainer to='/creditPool'>
-                  <Nav.Link>Capital Pool</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to='/credit-guaranty-pool'>
-                  <Nav.Link>Credit Guaranty Pool</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to='/farming'>
-                  <Nav.Link>Farming</Nav.Link>
-                </LinkContainer> */}
               </div>
               <div className='navbar__right'>
-                {/* <div className='circle'>
-                <LinkContainer to='/'>
-                  <Image src={User} alt='User' />
-                </LinkContainer>
-              </div> */}
-                {/* <div className='option__wrapper'>
-                <a>962.00 CRT</a>
-              </div> */}
                 <div className='option__wrapper'>
                   <a>CAPL: ${numberFormate(caplPrice)}</a>
                 </div>
